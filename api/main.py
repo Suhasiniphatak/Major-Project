@@ -26,12 +26,10 @@ async def predict(
 ):
     image=read_file_as_image(await file.read())
     img_batch=np.expand_dims(image, 0)
-    
+
     prediction= MODEL.predict(img_batch)
     pass
    
-
-    
 
 
 if __name__=="__main__":
